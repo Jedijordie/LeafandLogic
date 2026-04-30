@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaf & Logic Features</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google font Heeboo -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Use Heebo font -->
+    <style>
+      html,
+      body {
+        font-family: "Heebo", sans-serif;
+      }
+
+      ul {
+        list-style-type: disc; /* This will ensure bullets are shown */
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#21243D",
+              secondary: "#229954",
+            },
+            fontSize: {
+              mobile: "26px",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+        <!-- Navigation Menu -->
+  <!-- Navigation Menu -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div>
+          <a href="home.html" class="flex items-center">
+            <span class="font-semibold text-green-800 text-xl">Leaf & Logic</span>
+        </a>
+        </div>
+        <!-- Regular menu -->
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="home.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Home</a>                  
+            <a href="devices.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Devices</a>
+            <a href="features.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Product Features</a>
+            <a href="hardware.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300 ">Hardware</a>
+            <a href="plant.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300 ">Plant Care</a>
+          </div> 
+        <!-- Mobile dropdown menu (hidden in regular) -->
+        <div class="md:hidden">
+          <div class="relative">
+            <button id="mobile-menu-button" class="text-gray-500 hover:text-green-800 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="mobile-menu" class="absolute top-10 right-4 mt-2 w-48 bg-white rounded-md shadow-lg z-10 hidden">
+              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button">
+                <a href="home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Home</a>
+                <a href="devices.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Devices</a>
+                <a href="features.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Product Features</a>
+                <a href="hardware.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Hardware</a>
+                <a href="plant.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Plant Care</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+<body style="background: url('./static/images/plantbackground.png') no-repeat center center; background-size: cover;">    
+    <main>
+      <div class="max-w-7xl mx-auto p-16">
+        <h1 class="text-3xl font-bold mb-8">Product Feature Information</h1>
+        <div class="space-y-8">
+          <!-- Section 1: Climate Control-->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Customizable Climate Control
+            </h2>
+            <div class="text-xl">
+              <i class="fas fa-sliders-h text-green-800 text-2xl"></i>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Easily control the climate for your plants!</span>
+            </div>
+            <br>
+            <ul class="list-disc list-inside">
+              <p>
+                Our Leaf & Logic Smart Greenhouse offers an innovative climate control system, specifically designed for plants with similar environmental needs. Due to the compact size of our greenhouse, we've optimized conditions to cater to a select group of plants that thrive under the same temperature and humidity settings. This focused approach ensures that your plants receive the consistent care they require for optimal growth within a smaller, more manageable ecosystem.
+              </p>
+              <br>
+              <li>
+                With our Smart Greenhouse you can control irrigation/ soil moisture, LED light patterns, tempurature and musical stimulation for your plants. 
+              </li>  
+              <li>
+                Temperature adjusts automatically for optimal plant health.
+              </li>  
+              <li>
+                Irrigation system waters plants when soil moisture is low.
+              </li>
+              <li>
+                LED lights are preset with optimal duration for plant type.
+              </li>
+              <li>
+                Turns on music daily for your plants to help with plant stimulation. 
+              </li>
+            </ul>
+          </section>
+        </div>
+          <!-- Section 2: Watering System -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            > 
+            Intelligent Watering System 
+            </h2>
+            <div class="text-xl">
+              <i class="fas fa-tint text-green-800 text-2xl"></i>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Automatic watering system</span>
+            </div>
+            <br>
+            <p>
+              The smart greenhouse is equipped with an intelligent watering system that uses capacitive soil moisture sensors to monitor the moisture levels in real time. Once the soil reaches the preset dryness threshold, the system initiates a watering cycle to hydrate the plants efficiently. This automated process ensures that your plants receive water only when necessary, reducing waste and promoting healthier root development.
+            </p>
+            <br>
+            <li>
+              With our Smart Greenhouse you can control irrigation through monitoring the soil moisture of your plants. 
+            </li>  
+            <li>
+              Sensors monitor soil moisture, watering your plants precisely when needed.
+            </li>  
+            <li>
+              Automatically water plants when soil moisture is low.
+            </li>
+            <li>
+              Watering system will turn off when soil moisture is optimal.
+            </li>
+            <li>
+              Our intelligent watering system is set up to ensure the soil moisture is at an optimal level. 
+            </li>
+          </section>
+        </div>
+          <!-- Section 3: LED Light Patterns -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+            Energy-Efficient LED Lighting:
+            </h2>
+            <div class="text-xl">
+              <i class="fas fa-lightbulb text-green-800 text-2xl"></i>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">LED light patterns</span>
+            </div>
+            <br>
+            <ul class="list-disc list-inside">
+              <p>
+                Our energy-efficient LED lighting system utilizes a full spectrum of light, including key red and blue wavelengths that plants need most for photosynthesis and growth. The LEDs are designed to mimic natural sunlight, providing your plants with a balanced intensity that promotes robust growth while conserving energy. 
+              </p>
+              <br>
+              <li>
+                Full-spectrum LEDs mimic natural sunlight, promoting growth with minimal energy use.
+              </li>  
+              <li>
+                Automatically starts and stops lights according to the set duration.
+              </li>
+              </ul>
+          </section>
+        </div>
+          <!-- Section 4: Tempurature Control -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Tempurature Control
+            </h2>
+            <div class="text-xl">
+              <i class="fas fa-thermometer-half text-green-800 text-2xl"></i>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Control the tempurature of your greenhouse</span>
+            </div>
+            <br>
+            <ul class="list-disc list-inside">
+              <p>
+                Maintaining the perfect climate for plant health is crucial, and our Leaf & Logic Smart Greenhouse excels at this with precision temperature control. Embedded sensors continuously monitor the ambient temperature, relaying data in real-time to our intuitive app. The app is programmed with the optimal temperature range for your specific plants, ensuring they always enjoy conditions that mimic their natural habitats. When temperatures rise above the ideal, the system automatically activates an integrated fan to circulate air and reduce heat, safeguarding your plants from the stress of overheating. This responsive system operates seamlessly, offering peace of mind that your greenery is nurtured under the watchful eye of Leaf & Logic's advanced technology, whether you're present or away.
+              </p>
+              <br>
+              <li>
+                Automatically adjusts temperature for optimal plant health.
+              </li>
+              <li>
+                Turns on fan when tempurature is too warm.
+              </li>
+              <li>
+                Is set to know what the optimal tempurate range is for your plants. 
+              </li>
+          </ul>
+              </section>
+            </div>
+          <!-- Section 5: Musical Stimulation -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+            Musical Plant Stimulation:      
+            </h2>
+            <div class="text-xl">
+              <i class="fas fa-music text-green-800 text-2xl"></i>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Play music for your plants to help stimulate growth!</span>
+            </div>
+            <br>
+              <ul class="list-disc list-inside">
+              <p>
+                Incorporating the soothing science of musical plant stimulation, the Leaf & Logic greenhouse gently bathes your plants in sound frequencies tailored for plant responsiveness. While this feature is experimental, it adds a harmonious ambiance to the environment and has the potential to positively influence plant growth and vitality.
+              </p>
+              <br>
+              <li>
+                Enhance growth with sound frequencies designed for plants.
+              </li>
+              <li>
+                Plays a 3 hour playlist at the optimal time of day.             
+              </li>
+              <li>
+                Plays music at optimal time of day for plant stimulation.      
+              </li>         
+            </ul>
+          </section>
+        </div>
+        </div>
+      </div>      
+    </main>
+    <footer class="text-center text-black py-4">
+      <p class="font-semibold text-lg">
+        Leaf & Logic Copyright &copy;2024 All rights reserved
+      </p>
+    </footer>>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-----MAIN JAVASCRIPT---->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

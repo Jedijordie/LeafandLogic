@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaf & Logic Features</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google font Heeboo -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Use Heebo font -->
+    <style>
+      html,
+      body {
+        font-family: "Heebo", sans-serif;
+      }
+
+      ul {
+        list-style-type: disc; /* This will ensure bullets are shown */
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#21243D",
+              secondary: "#229954",
+            },
+            fontSize: {
+              mobile: "26px",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+  
+      
+    <!-- Navigation Menu -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div>
+            <a href="home.html" class="flex items-center">
+              <span class="font-semibold text-green-800 text-xl">Leaf & Logic</span>
+          </a>
+          </div>
+          <!-- Regular menu -->
+          <div class="hidden md:flex items-center space-x-1">
+              <a href="home.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Home</a>                  
+              <a href="devices.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Devices</a>
+              <a href="features.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Product Features</a>
+              <a href="hardware.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300 ">Hardware</a>
+              <a href="plant.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300 ">Plant Care</a>
+            </div> 
+          <!-- Mobile dropdown menu (hidden in regular) -->
+          <div class="md:hidden">
+            <div class="relative">
+              <button id="mobile-menu-button" class="text-gray-500 hover:text-green-800 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="mobile-menu" class="absolute top-10 right-4 mt-2 w-48 bg-white rounded-md shadow-lg z-10 hidden">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button">
+                  <a href="home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Home</a>
+                  <a href="devices.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Devices</a>
+                  <a href="features.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Product Features</a>
+                  <a href="hardware.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Hardware</a>
+                  <a href="plant.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Plant Care</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+<body style="background: url('./static/images/plantbackground.png') no-repeat center center; background-size: cover;">   
+    <main>
+      <div class="max-w-7xl mx-auto p-16">
+        <h1 class="text-3xl font-bold mb-8">House Plant Information</h1>
+        <div class="space-y-8">
+        <!-- Section 1: House Plant Information -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+            Care Instructions for Common Houseplants:
+            </h2>
+            <div class="text-xl">
+              <i class="fas fa-leaf  text-green-800 text-2xl"></i>
+              <span class="mx-4">|</span>
+              <span class="text-secondary ">Ideal Temperature, Soil Moisture & LED Light Patterns </span>
+            </div>
+            <br>
+              <ul class="list-disc list-inside">
+              <p>
+                Here is a breakdown of similar care instructions for various common houseplant families:
+              </p>
+              <br>
+              <h6 class="font-semibold text-green-800">Peperomias</h6>
+              <li>
+                Temperature: 18-29°C
+              </li>
+              <li>
+                Soil Moisture: Optimal 50-70%; Irrigation Trigger Point: 40-45%             
+              </li>
+              <li>
+                LED Light Pattern: Combination of Red and Blue; 12-16hrs; Angled Lighting; Intensity: 40-50%    
+              </li>   
+              <li>
+                Musical Stimulation: Jazz or Classical; 1-3hrs early afternoon; Moderate volume; Hertz: 115-220Hz
+              </li> 
+              <br>
+              <h6 class="font-semibold text-green-800">Hoyas</h6>
+              <li>
+                Temperature: 18-29°C
+              </li>
+              <li>
+                Soil Moisture: Optimal 50-70%; Irrigation Trigger Point: 40-45%           
+              </li>
+              <li>
+                LED Light Pattern: Combination of Red and Blue; 12-16hrs; Angled Lighting; Intensity: 40-50%   
+              </li>   
+              <li>
+                Musical Stimulation: Jazz or Classical; 1-3hrs early afternoon; Moderate volume; Hertz: 115-220Hz
+              </li>
+              <br>
+              <h6 class="font-semibold text-green-800">Palms</h6>
+              <li>
+                Temperature: Varies by species, generally 18-29°C
+              </li>
+              <li>
+                Soil Moisture: Optimal varies by species; generally moderate to high; Irrigation Trigger Point: 40-50%         
+              </li>
+              <li>
+                LED Light Pattern: Generally prefers indirect sunlight; 12-16hrs; Intensity: Varies by species 
+              </li>   
+              <li>
+                Musical Stimulation: Jazz or Classical; 1-3hrs early afternoon; Moderate volume; Hertz: 115-220Hz
+              </li>    
+              <br>
+              <h6 class="font-semibold text-green-800">Ferns</h6>
+              <li>
+                Temperature: Varies by species, generally 18-24°C
+              </li>
+              <li>
+                Soil Moisture: Optimal varies by species; generally high; Irrigation Trigger Point: 50-60%       
+              </li>
+              <li>
+                LED Light Pattern: Indirect sunlight preferred; 12-14hrs; Intensity: Moderate
+              </li>   
+              <li>
+                Musical Stimulation: Jazz or Classical; 1-3hrs early afternoon; Moderate volume; Hertz: 115-220Hz
+              </li>
+              <br>
+              <h6 class="font-semibold text-green-800">Succulents</h6>
+              <li>
+                Temperature: Varies by species, generally 18-29°C
+              </li>
+              <li>
+                Soil Moisture: Low to moderate; Irrigation Trigger Point: 20-30%     
+              </li>
+              <li>
+                LED Light Pattern: Direct sunlight preferred; 10-14hrs; Intensity: Moderate to high
+              </li>   
+              <li>
+                Musical Stimulation: Jazz or Classical; 1-3hrs early afternoon; Moderate volume; Hertz: 115-220Hz
+              </li>   
+              <br>
+              <h6 class="font-semibold text-green-800">Snake Plants</h6>
+              <li>
+                Temperature: 18-24°C
+              </li>
+              <li>
+                Soil Moisture: Optimal 30-40%; Irrigation Trigger Point: 20-25%   
+              </li>
+              <li>
+                LED Light Pattern: Indirect to moderate light preferred low light conditions; 10-14hrs; Intensity: Low to moderate
+              </li>   
+              <li>
+                Musical Stimulation: Jazz or Classical; 1-3hrs early afternoon; Moderate volume; Hertz: 115-220Hz
+              </li>      
+              <br>
+              <h6 class="font-semibold text-green-800">Spider Plants</h6>
+              <li>
+                Temperature: 18-24°C
+              </li>
+              <li>
+                Soil Moisture: Optimal 40-60%; Irrigation Trigger Point: 30-35%    
+              </li>
+              <li>
+                LED Light Pattern: Indirect to moderate light preferred low light conditions; 10-14hrs; Intensity: Low to moderate
+              </li>   
+              <li>
+                Musical Stimulation: Jazz or Classical; 1-3hrs early afternoon; Moderate volume; Hertz: 115-220Hz
+              </li>  
+              <br>
+              <h6 class="font-semibold text-green-800">Peace Lillies</h6>
+              <li>
+                Temperature: 18-24°C
+              </li>
+              <li>
+                Soil Moisture: Optimal 60-80%; Irrigation Trigger Point: 50-55%  
+              </li>
+              <li>
+                LED Light Pattern: Indirect to moderate light preferred low light conditions; 10-14hrs; Intensity: Low to moderate
+              </li>   
+              <li>
+                Musical Stimulation: Jazz or Classical; 1-3hrs early afternoon; Moderate volume; Hertz: 115-220Hz
+              </li>
+              <br>
+              <h6 class="font-semibold text-green-800">ZZ Plants</h6>
+              <li>
+                Temperature: 18-24°C
+              </li>
+              <li>
+                Soil Moisture: Optimal 30-40%; Irrigation Trigger Point: 20-25% 
+              </li>
+              <li>
+                LED Light Pattern: Indirect to moderate light preferred low light conditions; 8-12hrs; Intensity: Low to moderate
+              </li>   
+              <li>
+                Musical Stimulation: Jazz or Classical; 1-3hrs early afternoon; Moderate volume; Hertz: 115-220Hz
+              </li>
+              <br>
+              <h6 class="font-semibold text-green-800">Philodendrons</h6>
+              <li>
+                Temperature: 18-24°C
+              </li>
+              <li>
+                Soil Moisture: Optimal 40-60%; Irrigation Trigger Point: 30-35%
+              </li>
+              <li>
+                LED Light Pattern: Indirect to moderate light preferred low light conditions; 10-14hrs; Intensity: Low to moderate
+              </li>   
+              <li>
+                Musical Stimulation: Jazz or Classical; 1-3hrs early afternoon; Moderate volume; Hertz: 115-220Hz
+              </li>
+            </ul>
+          </section>
+        </div>
+        </div>
+      </div>      
+    </main>
+    <footer class="text-center text-black py-4">
+      <p class="font-semibold text-lg">
+        Leaf & Logic Copyright &copy;2024 All rights reserved
+      </p>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-----MAIN JAVASCRIPT---->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

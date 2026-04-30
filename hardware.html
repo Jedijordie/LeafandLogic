@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaf & Logic Information</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google font Heeboo -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Use Heebo font -->
+    <style>
+      html,
+      body {
+        font-family: "Heebo", sans-serif;
+      }
+
+      ul {
+        list-style-type: disc; /* This will ensure bullets are shown */
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#21243D",
+              secondary: "#229954",
+            },
+            fontSize: {
+              mobile: "26px",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <body style="background: url('./static/images/plantbackground.png') no-repeat center center; background-size: cover;">
+    
+        <!-- Navigation Menu -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div>
+          <a href="home.html" class="flex items-center">
+            <span class="font-semibold text-green-800 text-xl">Leaf & Logic</span>
+        </a>
+        </div>
+        <!-- Regular menu -->
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="home.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Home</a>                  
+            <a href="devices.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Devices</a>
+            <a href="features.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Product Features</a>
+            <a href="hardware.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300 ">Hardware</a>
+            <a href="plant.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300 ">Plant Care</a>
+          </div> 
+        <!-- Mobile dropdown menu (hidden in regular) -->
+        <div class="md:hidden">
+          <div class="relative">
+            <button id="mobile-menu-button" class="text-gray-500 hover:text-green-800 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="mobile-menu" class="absolute top-10 right-4 mt-2 w-48 bg-white rounded-md shadow-lg z-10 hidden">
+              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button">
+                <a href="home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Home</a>
+                <a href="devices.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Devices</a>
+                <a href="features.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Product Features</a>
+                <a href="hardware.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Hardware</a>
+                <a href="plant.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Plant Care</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+        
+    <main>
+      <div class="max-w-7xl mx-auto p-16">
+        <h1 class="text-3xl font-bold mb-8">Hardware Specifications</h1>
+        <div class="space-y-8">
+          <!-- Section 1: Greenhouse Information-->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Greenhouse
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: SumGrow</span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                Mini Garden Greenhouse 23" x 12" x1 6.5" including cover tent for indoor home gardening.
+              </li>
+              <li>
+                Take up little space but gives your plants a great early start.                
+              </li>
+              <li>
+                Suitable for 10x20 seedling tray and heating mat.                
+              </li>
+              <li>
+                Roll-up zipped panel for easy access, adjustable ventilation, and humidity control.              
+              </li>
+              <li>
+                Manufactured from waterproof transparent plastic, allowing sunlight to filter through.             
+              </li>
+              <li>
+                Recommended for indoor use. Suited to sheltered positions such as balconies or kitchen window sill, etc.            
+              </li>            
+            </ul>
+          </section>
+        </div>
+          <!-- Section 2: LED Information -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            > 
+              LED Grow Lights
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: Garpsen</span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                Full Spectrum & Energy Efficient: Equipped with 9 Red, 4 Blue, 7 Warm White LEDs per tube, ideal for all growth stages, replaces 50W HPS, saves energy.
+              </li>
+              <li>
+                Extended Timer Function: Features 6/12/16H timer, for better support of light-loving plants, automated lighting control.              
+              </li>
+              <li>
+                Adjustable Modes & Brightness: Offers 3 color modes (Red+Blue, Warm White, Mixed) and 5 brightness levels (20%-100%).               
+              </li>
+              <li>
+                Wide Illumination & Easy Installation: 360° flexible gooseneck expands light coverage, easy angle adjustment.              
+              </li>
+              <li>
+                34cm x 8.6cm x 14.5cm         
+              </li>         
+            </ul>
+          </section>
+        </div>
+          <!-- Section 3: Fan Information -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Fan
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: Noctua</span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                Noctua NF-A14 iPPC-3000 PWM, Heavy Duty Cooling Fan, 4-Pin, 3000 RPM (140mm, Black).
+              </li>
+              <li>
+                Award-winning 140x25mm A-series fan with Flow Acceleration Channels and Advanced Acoustic Optimisation frame for superior cooling efficiency              
+              </li>
+              <li>
+                12V 3000rpm model (41.3dB) with 4-pin PWM connector for automatic speed control via 4-pin PWM fan headers, broad 800-3000rpm speed range.               
+              </li>
+              <li>
+                High-speed industrialPPC version for industrial heavy-duty applications that require extreme cooling performance and advanced ingress protection.            
+              </li>
+              <li>
+                Ruggedised fibre-glass reinforced polyamide construction and IP52 certified water and dust protection.
+              </li>
+              <li>
+                14cm x 14cm x 2.5cm  
+              </li>         
+            </ul>
+          </section>
+        </div>
+          <!-- Section 4: Raspberry Pi Information -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Raspberry Pi 4
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: Sony</span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+              Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.8GHz
+              </li>
+              <li>
+              1GB, 2GB, 4GB or 8GB LPDDR4-3200 SDRAM (depending on model)
+              </li>
+              <li>
+              2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE
+              </li>
+              <li>
+              Gigabit Ethernet
+              </li>
+              <li>
+              2 USB 3.0 ports; 2 USB 2.0 ports.
+              </li>
+              <li>
+              Raspberry Pi standard 40 pin GPIO header (fully backwards compatible with previous boards)
+              </li>
+              <li>
+              2 × micro-HDMI® ports (up to 4kp60 supported)
+              </li>
+              <li>
+              2-lane MIPI DSI display port
+              </li>
+              <li>
+              2-lane MIPI CSI camera port
+              </li>
+              <li>
+              4-pole stereo audio and composite video port
+              </li>
+              <li>
+              H.265 (4kp60 decode), H264 (1080p60 decode, 1080p30 encode)
+              </li>
+              <li>
+              OpenGL ES 3.1, Vulkan 1.0
+              </li>
+              <li>
+              Micro-SD card slot for loading operating system and data storage
+              </li>
+              <li>
+              5V DC via USB-C connector (minimum 3A*)
+              </li>
+              <li>
+              5V DC via GPIO header (minimum 3A*)
+              </li>
+              <li>
+              Power over Ethernet (PoE) enabled (requires separate PoE HAT)
+              </li>
+              <li>
+              Operating temperature: 0 – 50 degrees C ambient
+              </li>
+          </ul>
+              </section>
+            </div>
+          <!-- Section 5: Speaker Information -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Speaker
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: NJSJ</span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                High sound quality: built-in 2 * 3W stereo speakers, ensuring clear, louder sound with lower distortion. 
+              </li>
+              <li>
+                5V/ 1A and up power supply (recommended).
+              </li>
+              <li>
+                Portable Speakers: Small size (67 x 65 x 90mm) and light weight (11oz ) perfect for small spaces.              
+              </li>
+              <li>
+                Corded Electric, 5 Volts.           
+              </li>         
+            </ul>
+          </section>
+        </div>
+          <!-- Section 6: Soil Moisture Sensor Information -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+            Soil Moisture Sensor Module
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: Canada Robotix</span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                The Soil Moisture Sensor Module (Capacitive) acts like a capacitor where the water level changes the capacity and can measure charge and discharge timing.
+              </li>
+              <li>
+                It is a popular module for measuring the moistness of soil.
+              </li>
+              <li>
+                The biggest advantage over a traditional moisture sensor is that the capacitive sensor doesn't corrode.
+              </li>
+              <li>
+                Operates between 3.3V to 5V and produce an analog output.
+              </li>
+              <li>
+                Comes with a 3-pin jumper wire, SKU: 2639, BIN: 3-02-02-04.
+              </li>
+            </ul>
+          </section>
+        </div>
+          <!-- Section 7: Tempurature Sensor Information -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Tempurature Sensor
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: BC Robotics</span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                This DS18B20 Digital temperature sensor is a pre-wired version of the standard “1 Wire” temperature sensor. 
+              </li>
+              <li>
+                The sensor is encased in a weatherproof housing and should be quite happy in wet or damp conditions and to temperatures of up to 100°C.
+              </li>
+              <li>
+                Usable temperature range: -55 to 125°C (-67°F to +257°F)
+              </li>
+              <li>
+                Uses 1-Wire interface- requires only one digital pin for communication
+              </li>
+              <li>
+                Multiple sensors can share one pin
+              </li>
+              <li>
+                9 to 12 bit selectable resolution
+              </li>
+              <li>
+                1 Wire Temperature Sensor
+              </li>
+              <li>
+                ±0.5°C Accuracy from -10°C to +85°C
+              </li>
+              <li>
+                Query time is less than 750ms
+              </li>
+              <li>
+                Temperature-limit alarm system
+              </li>
+            </ul>
+          </section>
+        </div>
+          <!-- Section 8: Relay Module Information -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Relay Module
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: BC Robotics </span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                Current: AC250V 10A, DC30V 10A |  5V
+              </li>
+              <li>
+                LED: Indicator for Relay Status
+              </li>
+              <li>
+                Inputs: Opto-isolated
+              </li>
+              <li>
+                Unit Weight: 0.15 lbs
+              </li>
+            </ul>
+          </section>
+        </div>
+          <!-- Section 9: Breadboard Information -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Breadboard
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: BC Robotics </span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                This breadboard is considered "full sized" and features 830 tie points in 4 interconnected power/ground columns and 126 interconnected rows.
+              </li>
+              <li>
+                The board is 6.50″ x 2.14″ (165.1mm x 54.4mm) and has tabs that allow it to be connected to other solderless breadboards to make it even larger.
+              </li>
+              <li>
+                0.100ʺ Pitch
+              </li>
+              <li>
+                4 columns, 63 rows
+              </li>
+              <li>
+                830 Tie points
+              </li> 
+              <li>
+                Adhesive backing
+              </li>
+            </ul>
+          </section>
+        </div>
+          <!-- Section 10: Analog Digital Converter Information -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Analog Digital Converter
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: BC Robotics </span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                The Raspberry Pi 16-Channel Analog Input HAT provides 16 x 10-bit analog input channels for your Raspberry Pi. 
+              </li>
+              <li>
+                Compatible with all versions of the Raspberry Pi 4 and any other 40 pin GPIO versions of the Raspberry Pi.
+              </li>
+              <li>
+                16 analog channels.            
+              </li>
+              <li>
+                0 - 3.3V inputs, 10 bit resolution.           
+              </li>         
+            </ul>
+          </section>
+        </div>
+          <!-- Section 11: Raspberry Pi Header Informtaion -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Raspberry Pi Header
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: BC Robotics</span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                2 x 20 Pin header
+              </li>
+              <li>
+                Works with all versions of the Raspberry Pi
+              </li>
+              <li>
+                Compatible with all 40 pin GPIO headers found on many variations of the Raspberry including all versions of the Pi 4.
+              </li>         
+            </ul>
+          </section>
+          </div>
+          <!-- Section 12: Water Pump Information-->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+          <section class="text-primary space-y-2">
+            <h2
+              class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]"
+            >
+              Water Pump
+            </h2>
+            <div class="text-xl">
+              <span>Installed March 2024</span>
+              <span class="mx-4">|</span>
+              <span class="text-secondary">Brand: Jebao</span>
+            </div>
+            <br>
+            <p class="font-bold">
+              About this item:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                PP-333LV Submersible Fountain Pond Water Pump, 2.5W
+              </li>
+              <li>
+                48L x 43W x 28H millimeters
+              </li>
+              <li>
+                Low voltage Jebao water pump (120V 5060Hz) with 12V AC UL transformer          
+              </li>
+              <li>
+                Pump Flow Rate: 66 GPH - flow control dial         
+              </li>    
+              <li>
+                Pump Size: 1 78" X 1 34" x 1 18"(H)
+              </li>     
+              <li>
+                1.1 Gallons Per Minute
+              </li>
+            </ul>
+          </section>
+        </div>
+        </div>
+      </div>        
+    </main>
+    <footer class="text-center text-black py-4">
+      <p class="font-semibold text-lg">
+        Leaf & Logic Copyright &copy;2024 All rights reserved
+      </p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+     <!-----MAIN JAVASCRIPT---->
+     <script src="./js/main.js"></script>
+  </body>
+</html>

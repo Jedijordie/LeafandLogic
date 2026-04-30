@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <!-- Tailwind CSS from CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body style="background: url('./static/images/plantbackground.png') no-repeat center center; background-size: cover;"></body>
+  <!-- Navigation Menu -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div>
+            <a href="home.html" class="flex items-center">
+                <span class="font-semibold text-green-800 text-xl">Leaf & Logic</span>
+            </a>
+        </div>
+        <!-- Regular menu -->
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="home.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Home</a>                  
+            <a href="devices.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Devices</a>
+            <a href="features.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Product Features</a>
+            <a href="hardware.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300 ">Hardware</a>
+            <a href="plant.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300 ">Plant Care</a>
+          </div> 
+        <!-- Mobile dropdown menu (hidden in regular) -->
+        <div class="md:hidden">
+          <div class="relative">
+            <button id="mobile-menu-button" class="text-gray-500 hover:text-green-800 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="mobile-menu" class="absolute top-10 right-4 mt-2 w-48 bg-white rounded-md shadow-lg z-10 hidden">
+              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button">
+                <a href="home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Home</a>
+                <a href="devices.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Devices</a>
+                <a href="features.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Product Features</a>
+                <a href="hardware.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Hardware</a>
+                <a href="plant.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800" role="menuitem">Plant Care</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <div class="max-w-6xl mx-auto px-4 py-8">
+
+    <!-- Control Devices & Sensor Information -->
+    <div class="container mx-auto px-1 py-8">
+      <div class="bg-white shadow-md rounded-lg p-6 mb-4">
+        <h2 class="text-center text-2xl mb-4">Control Devices & Sensor Information</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1: Moisture -->
+          <div class="bg-white shadow-md rounded-lg p-6 flex flex-col justify-center items-center">
+            <h2 class="text-center text-xl mb-4">Moisture Sensor</h2>
+            <div class="rounded-full bg-green-800 p-4 flex justify-center items-center mb-4">
+              <i class="fas fa-tint text-white text-3xl"></i>
+            </div>
+            <p class="text-center text-gray-700 mb-2">Moisture Level:</p>
+            <p id="moistureLevel" class="text-center font-semibold text-lg">63.23%</p>
+          </div>
+          <!-- Card 2: Temperature -->
+          <div class="bg-white shadow-md rounded-lg p-6 flex flex-col justify-center items-center">
+            <h2 class="text-center text-xl mb-4">Temperature Sensor</h2>
+            <div class="rounded-full bg-blue-500 p-4 flex justify-center items-center mb-4">
+              <i class="fas fa-thermometer-half text-white text-3xl" aria-hidden="true"></i>
+            </div>
+            <p class="text-center text-gray-700 mb-2">Temperature (°C):</p>
+            <p id="temperatureLevel" class="text-center font-semibold text-lg">18°C</p>
+          </div>
+          <!-- Card 3: Fan Status -->
+          <div class="bg-white shadow-md rounded-lg p-6 flex flex-col justify-center items-center">
+            <h2 class="text-center text-xl mb-4">Fan Status</h2>
+            <div class="rounded-full bg-red-700 p-4 flex justify-center items-center mb-4">
+              <i class="fas fa-fan text-white text-3xl"></i>
+            </div>
+            <p class="text-center text-gray-700 mb-2">Fan Status:</p>
+            <p id="fanStatus" class="text-center font-semibold text-lg">OFF</p>
+          </div>
+          <!-- Card 4: Pump Status -->
+          <div class="bg-white shadow-md rounded-lg p-6 flex flex-col justify-center items-center">
+            <h2 class="text-center text-xl mb-4">Pump Status</h2>
+            <div class="rounded-full bg-indigo-600 p-4 flex justify-center items-center mb-4">
+              <i class="fas fa-tachometer-alt text-white text-3xl"></i>
+            </div>
+            <p class="text-center text-gray-700 mb-2">Pump Status:</p>
+            <p id="pumpStatus" class="text-center font-semibold text-lg">OFF</p>
+          </div>
+          <!-- Card 5: Speaker Status -->
+          <div class="bg-white shadow-md rounded-lg p-6 flex flex-col justify-center items-center">
+            <h2 class="text-center text-xl mb-4">Speaker Status</h2>
+            <div class="rounded-full bg-gray-700 p-4 flex justify-center items-center mb-4">
+              <i class="fas fa-volume-up text-white text-3xl"></i>
+            </div>
+            <p class="text-center text-gray-700 mb-2">Speaker Status:</p>
+            <p id="speakerStatus" class="text-center font-semibold text-lg">OFF</p>
+          </div>
+          <!-- Card 6: Light Status -->
+          <div class="bg-white shadow-md rounded-lg p-6 flex flex-col justify-center items-center">
+            <h2 class="text-center text-xl mb-4">Light Status</h2>
+            <div class="rounded-full bg-yellow-500 p-4 flex justify-center items-center mb-4">
+              <i class="fas fa-lightbulb text-white text-3xl"></i> <!-- Icon updated for Light -->
+            </div>
+            <p class="text-center text-gray-700 mb-2">Light Status:</p>
+            <p id="lightStatus" class="text-center font-semibold text-lg">ON</p>
+          </div>
+          <!-- Placeholder element for the "lightOn" button -->
+          <button id="lightOn" style="display: none;"></button>
+          <!-- Placeholder element for the "lightOn" button -->
+          <button id="lightOff" style="display: none;"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product/Project Scope -->
+    <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto max-w-6xl mx-auto px-4 py-8">
+      <h1 class="text-4xl font-bold">Welcome to Leaf & Logic</h1>
+      <div class="container flex mx-auto">
+        <section class="snow flex flex-col sm:flex-row mt-8 mb-10">
+          <div class="sm:order-2 md:order-2 flex-1">
+            <img class="w-full h-83% ml-4" src="static/images/logo.png" alt="logo">
+          </div>
+          <div class="sm:order-1 md:order-1 bg-section-1 flex-1 flex-col justify-center items-center">
+            <p>Leaf & Logic’s Eco-Friendly Smart Greenhouse Controller addresses the need for a cost-effective, customizable, and sustainable solution to enhance plant growth and greenhouse management. By integrating advanced environmental controls with innovative plant stimulation techniques such as music and programmable LED light patterns, this project stands out from existing smart greenhouse solutions. Its design caters to eco-conscious gardeners, educators, and small-scale greenhouse operators who seek to leverage technology for improved plant care and agricultural education.
+              <br>
+              <br>
+              Our Eco-Friendly Smart Greenhouse Controller is a game-changer for those who lead hectic lives or occasionally let their gardening tasks slip their minds. It automates the important aspects of plant care, such as ensuring optimal light, water, and temperature levels, operating autonomously to keep your plants thriving, even amidst a busy personal schedule or lapses in memory.
+              <br>
+              <br>
+              This product is for individuals who've hesitated to venture into gardening due to their poor track record with plants. You don’t need a green thumb to succeed here; our system is engineered to take the guesswork out of gardening, employing technology to simulate healthy plant growth. This makes the art of gardening accessible and enjoyable for everyone.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <<!-- Slideshow -->
+      <div class="slideshow-container overflow-hidden relative bg-white shadow-md rounded-lg p-6 mb-6 mx-auto max-w-6xl px-4 py-8">
+        <h1 class="text-2xl text-center font-normal mb-4">Photos</h1>
+        <div id="slideshow" class="flex transition-transform items-center justify-start">
+          <!-- Adjusting width of images to show 1 at a time on small screens and 3 at a time on larger screens -->
+            <img src="./static/images/image1.jpg" alt="Image 1" class="sm:w-full md:w-1/3 lg:w-1/3 px-2">
+            <img src="./static/images/image2.jpg" alt="Image 2" class="sm:w-full md:w-1/3 lg:w-1/3 px-2">
+            <img src="./static/images/image3.jpg" alt="Image 3" class="sm:w-full md:w-1/3 lg:w-1/3 px-2">
+            <img src="./static/images/image4.jpg" alt="Image 4" class="sm:w-full md:w-1/3 lg:w-1/3 px-2">
+            <img src="./static/images/image5.jpg" alt="Image 5" class="sm:w-full md:w-1/3 lg:w-1/3 px-2">
+            <img src="./static/images/image6.jpg" alt="Image 6" class="sm:w-full md:w-1/3 lg:w-1/3 px-2">
+            <img src="./static/images/logo.png" alt="Image 7" class="sm:w-full md:w-1/3 lg:w-1/3 px-2">
+        </div>
+        <!-- Position buttons at the bottom of the slideshow container -->
+        <button id="prev" class="absolute left-2 bottom-4 ml-4 bg-white text-black py-1 px-4 hover:bg-gray-200 rounded-lg">Prev</button>
+        <button id="next" class="absolute right-2 bottom-4 mr-4 bg-white text-black py-1 px-4 hover:bg-gray-200 rounded-lg">Next</button>
+      </div>
+
+      <!-- Contact Information-->
+      <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+        <section class="text-primary space-y-2 text-center flex items-center justify-center">
+          <h2 class="text-mobile sm:text-3xl text-green-800 font-medium leading-9 sm:leading-[44px]">
+            Contact Information
+          </h2>
+        </section>
+        <ul class="text-center">
+          <p class="text-xl font-semibold mb-4">
+            Have questions? Interested in our product? Contact the Leaf & Logic Team!
+          </p>
+          <div class="text-xl flex items-center justify-center">
+            <i class="fas fa-leaf text-green-800 mr-2" style="margin-top: 3px;"></i>
+            <span class="text-secondary text-green-800 font-bold">Leaf & Logic Team</span>
+          </div>
+          <li class="text-lg flex items-center justify-center">
+            <span class="font-bold mr-1">Email:</span>
+            <img src="static/images/email.png" alt="email">
+          </li>
+          <li class="text-lg">
+            <span class="font-bold">Team Members:</span> David A, Jordie M, Raj S.
+          </li>
+        </ul>
+      </div>
+
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <!-----MAIN JAVASCRIPT---->
+      <script src="./js/main.js"></script>
+
+      <footer class="text-center text-black py-4">
+        <p class="font-semibold text-lg">
+          Leaf & Logic Copyright &copy;2024 All rights reserved
+        </p>
+      </footer>
+
+</body>
+
+</html>
