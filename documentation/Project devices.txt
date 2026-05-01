@@ -1,0 +1,13 @@
+Raspberry Pi 4
+Arduino Board – Uno R3
+Raspberry Pi Protection Case
+Soil moisture sensor – Capacitive Soil v1.2
+DS18B20 Digital Temperature Sensor SKU-020
+DHT22 TEMP & Humidity Sensor
+Relay Module 2 Chane..gger X002COEYKF
+LDR Light Sensor
+Arduino bluetooth
+Breadboard
+Lumosity Light Sensor
+Voltage Converter
+Small wires – approx. 10 ft (5 x2ft)
