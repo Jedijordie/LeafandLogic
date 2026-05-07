@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaf & Logic - Plant Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html, body {
+        font-family: "Heebo", sans-serif;
+      }
+      ul {
+        list-style-type: disc;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#21243D",
+              secondary: "#229954",
+            },
+            fontSize: {
+              mobile: "26px",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background: url('./static/images/plantbackground.png') no-repeat center center; background-size: cover;">
+
+    <!-- Navigation Menu -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div>
+            <a href="home.html" class="flex items-center">
+              <span class="font-semibold text-green-800 text-xl">Leaf & Logic</span>
+            </a>
+          </div>
+          <!-- Regular menu -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="home.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Home</a>
+            <a href="devices.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Devices</a>
+            <a href="features.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Product Features</a>
+            <a href="hardware.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Hardware</a>
+            <a href="plant.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-800 transition duration-300">Plant Care</a>
+          </div>
+          <!-- Mobile dropdown menu -->
+          <div class="md:hidden">
+            <div class="relative">
+              <button id="mobile-menu-button" class="text-gray-500 hover:text-green-800 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+              </button>
+              <div id="mobile-menu" class="absolute top-10 right-4 mt-2 w-48 bg-white rounded-md shadow-lg z-10 hidden">
+                <div class="py-1" role="menu">
+                  <a href="home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800">Home</a>
+                  <a href="devices.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800">Devices</a>
+                  <a href="features.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800">Product Features</a>
+                  <a href="hardware.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800">Hardware</a>
+                  <a href="plant.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-800">Plant Care</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="max-w-7xl mx-auto p-16">
+        <h1 class="text-3xl font-bold mb-8">Plant Care Information</h1>
+        <div class="space-y-8">
+
+          <!-- Section 1: Our Plants -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+            <section class="text-primary space-y-2">
+              <h2 class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]">
+                Our Plants
+              </h2>
+              <div class="text-xl">
+                <span>Greenhouse Collection</span>
+                <span class="mx-4">|</span>
+                <span class="text-secondary">Family: Peperomia</span>
+              </div>
+              <br>
+              <p class="font-bold">Plant varieties & starting sizes:</p>
+              <ul class="list-disc list-inside">
+                <li>Rubella Peperomia — 4" tall, 4.5" wide</li>
+                <li>Peperomia Hope — 5" tall, 6" wide</li>
+                <li>Peperomia Marble — 6.5" tall, 9" wide</li>
+                <li>Cupid Peperomia — 6" tall, 9" wide</li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Section 2: Temperature -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+            <section class="text-primary space-y-2">
+              <h2 class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]">
+                Temperature
+              </h2>
+              <div class="text-xl">
+                <span>Sensor readings in °C</span>
+                <span class="mx-4">|</span>
+                <span class="text-secondary">Optimal Range: 18°C – 29°C</span>
+              </div>
+              <br>
+              <p class="font-bold">Key details:</p>
+              <ul class="list-disc list-inside">
+                <li>Optimal temperature to maintain for plants: 18°C – 29°C</li>
+                <li>±0.5°C accuracy from -10°C to +85°C</li>
+                <li>Uses 1-Wire interface — requires only one digital pin for communication</li>
+                <li>9 to 12 bit selectable resolution</li>
+                <li>Multiple sensors can share one pin</li>
+                <li>Temperature-limit alarm system built in</li>
+                <li>Query time is less than 750ms</li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Section 3: Soil Moisture -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+            <section class="text-primary space-y-2">
+              <h2 class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]">
+                Soil Moisture
+              </h2>
+              <div class="text-xl">
+                <span>Sensor readings in % RH</span>
+                <span class="mx-4">|</span>
+                <span class="text-secondary">Optimal Range: 50% – 70%</span>
+              </div>
+              <br>
+              <p class="font-bold">Key details:</p>
+              <ul class="list-disc list-inside">
+                <li>Optimal soil moisture to maintain: 50% – 70%</li>
+                <li>Irrigation is automatically triggered when moisture drops to 40% – 45%</li>
+                <li>Uses capacitive sensing — more accurate and corrosion-resistant than resistive sensors</li>
+                <li>Operating voltage: DC 3.3V – 5.5V</li>
+                <li>Compatible with DFRobot 3-pin Gravity interface</li>
+                <li>Suitable for garden plants, moisture detection, and intelligent agriculture</li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Section 4: LED Light Patterns -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+            <section class="text-primary space-y-2">
+              <h2 class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]">
+                LED Light Patterns
+              </h2>
+              <div class="text-xl">
+                <span>Full Spectrum Grow Lights</span>
+                <span class="mx-4">|</span>
+                <span class="text-secondary">Duration: 12 – 16 hrs/day</span>
+              </div>
+              <br>
+              <p class="font-bold">Key details:</p>
+              <ul class="list-disc list-inside">
+                <li>Colour combination: Red + Blue for optimal plant growth</li>
+                <li>Angled lighting promotes equal height and width growth</li>
+                <li>Brightness set to moderate intensity: 40% – 50%</li>
+                <li>Timer set to 12 – 16 hours per day with automatic memory cycle</li>
+                <li>Can be indirect lighting — does not need to be direct on the plant</li>
+                <li>3 available lighting modes: Warm White, Red+Blue, and Warm White+Blue+Red</li>
+                <li>5 dimming levels available from 20% – 100%</li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Section 5: Musical Stimulation -->
+          <div class="bg-white shadow-md rounded-lg p-6 mb-6 mx-auto w-100%">
+            <section class="text-primary space-y-2">
+              <h2 class="text-mobile sm:text-3xl font-medium leading-9 sm:leading-[44px]">
+                Musical Stimulation
+              </h2>
+              <div class="text-xl">
+                <span>Jazz & Classical</span>
+                <span class="mx-4">|</span>
+                <span class="text-secondary">1 – 3 hrs, Morning to Early Afternoon</span>
+              </div>
+              <br>
+              <p class="font-bold">Key details:</p>
+              <ul class="list-disc list-inside">
+                <li>Optimal genre: Jazz or Classical music</li>
+                <li>Optimal frequency range: 115 – 220Hz</li>
+                <li>Played in the morning to early afternoon only</li>
+                <li>Duration: 1 – 3 hours per day at moderate volume</li>
+                <li>Music is not played at night — this is the plant's resting time</li>
+                <li>Playing music too loud can cause negative effects on plant growth</li>
+              </ul>
+              <br>
+              <p class="font-bold">Our playlist:</p>
+              <a
+                href="https://open.spotify.com/playlist/2QqHZfdePzosdFgvHdz52h"
+                target="_blank"
+                class="text-secondary underline hover:text-green-700 transition duration-300"
+              >
+                🎵 Listen on Spotify
+              </a>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center text-black py-4">
+      <p class="font-semibold text-lg">
+        Leaf & Logic Copyright &copy;2024 All rights reserved
+      </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
